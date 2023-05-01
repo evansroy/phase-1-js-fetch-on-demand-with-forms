@@ -10,7 +10,6 @@ const init = () => {
     fetch(`http://localhost:3000/movies/${input.value}`)
       .then(response => response.json())
       .then(data => {
-        // console.log(data)
         //Access the DOM and store the two elements in js
         const title = document.querySelector('section#movieDetails h4')
         const summary = document.querySelector('section#movieDetails p')
